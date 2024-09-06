@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "scarletgemmod",
+  "version": "${version}",
+
+  "name": "Scarlet Gems",
+  "description": "Scarlet Gem for Nukes",
+  "authors": [
+    "Manke"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT License",
+  "icon": "assets/scarletgemmod/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.zane.scarletgemmod.ScarletGemMod"
+    ],
+    "client": [
+      "net.zane.scarletgemmod.ScarletGemModClient"
+    ]
+  },
+  "mixins": [
+    "scarletgemmod.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
